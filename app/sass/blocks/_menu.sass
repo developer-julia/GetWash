@@ -1,0 +1,46 @@
+.menu
+    &__list
+        display: flex
+        align-items: center
+        gap: 55px
+    &__link
+        font-weight: $font-light
+        font-size: 18px
+        color: $subtitle_color
+        transition: all .3s linear
+        &:hover, &:active, &:focus
+            color: $accent_color
+@media screen and (max-width: 965px)
+    .menu
+        position: fixed
+        overflow-y: auto
+        transform: translateY(-150%)
+        transition: transform 0.2s
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 11
+        background-color: #fff
+        color: white
+        margin-top: 60px
+        &__list
+            flex-direction: column
+            gap: 0px
+        &__item
+            display: block
+            width: 100%
+            text-align: center
+        &__link
+            display: block
+            padding: 35px 0
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 0
+                width: 100%
+                height: 1px
+                background: $light_blue_color

@@ -1,0 +1,32 @@
+.header
+    &__inner
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 25px 0
+    &__button
+        margin-left: 90px
+    &__button_blue
+        display: none
+.hamburger
+    display: none
+.class
+    margin-top: 120px
+
+@media screen and (max-width: 965px)
+    .hamburger
+        display: block
+    .header
+        position: fixed
+        width: 100%
+        border-bottom: 1px solid $light_blue_color
+        &__inner
+            padding: 18px 0
+        &__buttons
+            margin-top: 40px
+        &__button
+            margin-left: 0
+            margin-bottom: 24px
+        &__button_blue
+            display: block

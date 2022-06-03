@@ -4,21 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="../node_modules/boxicons/css/boxicons.min.css">
 </head>
 
 <body>
 
-  <header class="header"></header>
+  <header class="header header-top">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo">
+          <img src="./images/icons/logo.svg" alt="logo">
+        </a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#start">Как использовать</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#partners">Партнерам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#download">Скачать</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#testimonials">Отзывы</a>
+            </li>
+            <div class="header__buttons">
+              <button class="header__button button button--white">Получить доступ</button>
+              <button class="header__button header__button_blue button button--blue">Cтать партнером</button>
+            </div>
+          </ul> <!-- //.menu__list -->
+        </div> <!-- //.menu -->
+        <button class="hamburger">
+          <svg class="closeIcon" width="24" height="24" style="fill: #72727E;transform: msFilter">
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+            </path>
+          </svg>
+          <svg class="menuIcon" width="24" height="24" style="fill: #72727E;transform: msFilter">
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+        </button>
+      </div> <!-- //.header__inner -->
+    </div> <!-- //.container -->
+  </header> <!-- //.header //.header-top-->
   <div class="wrapper">
-    <main class="main"></main>
+    <main class="main">
+      <section class="class">
+        <img src="./images/01.jpg" alt="">
+      </section>
+    </main>
     <footer class="footer"></footer>
   </div>
 
 
 
-  <script src="js/main.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>

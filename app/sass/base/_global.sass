@@ -1,18 +1,39 @@
+@import vars
+
 html,
 body
 	height: 100%
-
+	font-family: $body_text
 .wrapper
 	display: flex
 	flex-direction: column
 	min-height: 100%
-
 .main
 	flex: 1 0 auto
 .footer
 	flex: 0 0 auto
-
 .container
   max-width: 1200px
   margin: 0 auto
-  padding: 0 15px
+  padding: 0 16px
+.button
+	cursor: pointer
+	border-radius: 6px
+	line-height: 140%
+	padding: 14px 25px 14px 26px
+.button--white
+	font-weight: $font-regular
+	font-size: 16px
+	color: $accent_color
+	border: 1px solid $light_blue_color
+	background-color: transparent
+	transition: all .3s linear
+	&:hover, &:active, &:focus
+		background-color: $accent_color
+		border: 1px solid $accent_color
+		color: $white_color
+.button--blue
+	font-weight: $font-regular
+	font-size: 16px
+	color: $white_color
+	background-color: $accent_color
